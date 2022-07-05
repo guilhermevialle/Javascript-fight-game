@@ -1,0 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .game {
+  position: relative;
+}
+
+body .game .player {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jumpKey {
+  -webkit-animation: jump 0.7s linear;
+          animation: jump 0.7s linear;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 35px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 35px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
